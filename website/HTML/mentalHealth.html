@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"defer></script>
+    
+        <!-- Load d3.js -->
+    <script src="https://d3js.org/d3.v4.js"defer></script>
+    <script src="./JavaScriptFiles/mentalHealth.js"defer></script>
+    <script src="./JavaScriptFiles/mentalHealth2.js"defer></script>
+    <script src="./JavaScriptFiles/mentalHealth3.js"defer></script>
+   
+
+   
+    <title>Mental Health</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #83bfeb;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html">Coronavirus (COVID-19) in the UK</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html">Daily uptade</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gov_advice.html">Government Advice</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cases.html">Cases</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="healthcare.html">Healthcare</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Effects on society
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="mentalHealth.html">Population's mental health</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="economy.html"> Economy</a></li>                
+                </ul>
+              </li>
+            </ul>
+            
+      
+            
+          </div>
+        </div>
+      </nav>
+
+
+      <div class="container">
+          <div class="row" style="margin-top: 3%;">
+
+            <h3>How the coronavirus pandemic is affecting the mental health of people across the Scotland</h3>
+              <div>
+                  <p>
+                    It is an undeniable fact that the coronavirus epidemic has caused serious changes in every individual's life. 
+                    Being a social being, the obligation to stay at home directly affects mental health by causing negative social and economic changes in their lives.
+                    This situation affects people from different segments of society at different levels of severity. 
+                    Some have serious health problems, some are unemployed, some cannot go to school, some just feel lonely. 
+                    As a result, even if everyone's method of dealing with problems in life is different, everyone's mental health suffered to a certain extent during this period. 
+                    Predictably,differences in people's responses to the pandemic are not randomly distributed in the UK - they are due to people's social and economic position in society. 
+                    Groups affected by socio-economic inequalities are more likely to report experiencing anxiety, panic, despair, loneliness, and being unable to cope well with the stress of the pandemic.
+                    The differentiation in the mental health effects of COVID-19 is of serious concern. Every individual in need should not hesitate to get help and the state should provide all kinds of support.
+                  </p>
+              </div>
+              <h5>How are you today?</h5>
+              <button type="button" id="help" class="btn btn-warning" style="width: 20%; padding-inline: 10px ;" >I need help :(</button>
+              <button type="button" id="fine" class="btn btn-warning" style="width: 20%; margin-left: 2%; ">I'm fine :) </button>
+              <p><div id="message"></div></p>
+              <a href=""></a>
+              <img id="dog" src="" alt="" style="width: 300px;">
+               
+          </div>
+
+          <div class="row" style="margin-top: 5px; margin-bottom: 20px;">
+
+            <p>The Mental Health Foundation is leading this ongoing, UK-wide, long-term study of how the pandemic is affecting people’s mental health, 
+              working with the University of Cambridge, Swansea University, the University of Strathclyde and Queen’s University Belfast. 
+              According to this study, the impact of covid on the mental health of the Scottish community:
+            </p>
+            <div class="col-6">
+              <h5>Feeling of loneliness (%)</h5>
+                <!-- Add 2 buttons -->
+                <button style="width: 25%;" onclick="update(data1)">March 2020(Before COVID)</button>
+                  <button style="width: 25%; margin-left: 2%;" onclick="update(data2)">November 2020</button>
+               <!-- Create a div where the graph will take place -->
+              <div id="my_dataviz"></div>   
+            </div>
+              <div class="col-6">
+                <h5>How well Scottish people are coping with stress related to the COVID-19 pandemic?  (%)</h5>
+              <!-- Add 2 buttons -->
+                <button style="width: 25%;" onclick="update(data3)">April 2020</button>
+                <button style="width: 25%; margin-left: 2%;" onclick="update(data4)">November 2020</button>
+             <!-- Create a div where the graph will take place -->
+                <div id="my_dataviz2"></div>   
+
+              </div>
+
+
+            
+
+  
+            
+
+          </div>
+      </div>
+
+
+      <!-- Bottom-->
+  <div>
+    <nav class="navbar fixed-bottom navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Last Updated: 26 January 2021</a>
+        </div>
+    </nav>
+
+  </div>
+  
+    
+      
+      
+      
+      
+      
+    
+
+      
+      
+    
+  </body>
+</html>

@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+       <!-- Option 1: Bootstrap Bundle with Popper -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"defer></script>
+   <script src="./JavaScriptFiles/gov_advice.js"></script>
+    <title>Government Advice</title>
+  </head>
+  <body>
+
+   
+        <!-- Navbar    -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #83bfeb;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html">Coronavirus (COVID-19) in the UK</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html">Daily uptade</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gov_advice.html">Government Advice</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cases.html">Cases</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="healthcare.html">Healthcare</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Effects on society
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="mentalHealth.html">Population's mental health</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="economy.html"> Economy</a></li>                
+                </ul>
+              </li>
+            </ul>
+            
+      
+            
+          </div>
+        </div>
+      </nav>
+
+
+      <div class= "summary">
+        <div class="container">
+          <div class="row">
+            <h3>Government Advice to stop the spread of COVID-19</h3>
+            <div><h4>Mainland and Scotland are in lockdown and every citizen must follow the 
+                <a href="https://www.gov.scot/collections/coronavirus-covid-19-guidance/">Coronavirus(COVID-19): stay at home guidance!</a>
+            These restrictions will remain in place until at least mid-February.
+            Some islands will remain at Level 3.  </h4></div>
+            <div class="col">
+                <div><span><b>PLEASE!</b></span></div>
+                <div>
+                    <ul>
+                        <li>
+                            <div>wear a face covering</div>
+                        </li>
+                        <li>
+                            <div>wash your hands and clean the surfaces regularly </div>
+                        </li>
+                        <li>
+                            <div>maintain social distancing</div>
+                        </li>
+                        <li>
+                            <div>avoid crowded places except for essential purposes</div>
+                        </li>
+                        <li>
+                            <div>self-isolate and book a test if you have COVID-19 symptoms</div>
+                        </li>
+                    </ul>
+                </div>
+                <div><h6>Do you have any of these symptoms on the right?</h6></div>
+                <button type="button" class="btn btn-danger"id="covid">YES</button>
+                <button  type="button" class="btn btn-secondary" id="healthy">NO</button>
+                <div id="message"></div>
+                <a href=""></a>
+            </div>
+            <div class="col">
+              <h5>COVID-19 Symptoms</h5>
+              <div> <p>On average it takes 5-6 days from when someone is infected with the virus for symptoms to show</p></div>
+              <h6>Most common symptoms:</h6>
+              <div class="col"> 
+                  <ul>
+                      <li>
+                          <div>fever</div>
+                      </li>
+                      <li>
+                        <div>dry cough</div>
+                    </li>
+                    <li>
+                        <div>tiredness</div>
+                    </li>
+                  </ul>
+              
+              <h6>Less common symptoms:</h6>
+              <div>
+                  <ul>
+                      <li>
+                          <div>aches and pains</div>
+                      </li>
+                      <li>
+                        <div>sore throat</div>
+                    </li>
+                    <li>
+                        <div>diarrhoea</div>
+                    </li>
+                    <li>
+                        <div>conjunctivits</div>
+                    </li>
+                    <li>
+                        <div>headache</div>
+                    </li>
+                    <li>
+                        <div>loss of taste or smell</div>
+                    </li>
+                  </ul>
+              </div>
+              <h6>Serious symptoms:</h6>
+              <div>
+                  <ul>
+                      <li>
+                        <div>difficulty breathing</div>
+                      </li>
+                      <li>
+                        <div>chest pain or pressure</div>
+                    </li>
+                    <li>
+                        <div>loss of speech or movement</div>
+                    </li>
+                  </ul>
+              </div>
+
+              
+            </div>
+
+
+            </div>
+
+           </div> 
+            
+           </div>
+           
+        </div>
+            
+            
+    
+     
+ 
+
+   
+   
+   
+   
+
+
+
+   
+   
+   
+      
+
+      
+    <!-- Bottom-->
+ <nav class="navbar fixed-bottom navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Last Updated: 26 January 2021</a>
+    </div>
+  </nav>   
+    
+  </body>
+</html>
